@@ -1,0 +1,140 @@
+/* Alapbeállítások */
+:root {
+  --primary-bg-color: #f3f5f7;
+  --nav-link-color: rgba(0, 0, 0, 0.65);
+  --nav-link-hover-color: rgba(0, 0, 0, 0.8);
+  --card-bg: rgba(30, 41, 59, 0.7);
+  --primary-color: #8b5cf6;
+  --text-dim: #94a3b8;
+}
+
+html,
+body,
+#app {
+  height: 100%;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background: radial-gradient(circle at center, #f5f3ff 0%, #ffffff 100%);
+  color: var(--text-color);
+  line-height: 1.6;
+  padding: 0;
+  margin: 0;
+}
+
+/* Navigáció */
+.portfolio-navbar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  min-height: 70px;
+  background: #f8f9fa;
+  z-index: 100;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+}
+
+.portfolio-navbar_logo {
+  text-transform: uppercase;
+  font-weight: bolder;
+  font-size: 1.45rem;
+  letter-spacing: 0.2px;
+  background: linear-gradient(90deg, #ff9800, #ffb347);
+  background-clip: text;
+  color: transparent;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.04);
+}
+
+.portfolio-navbar_links {
+  display: flex;
+  list-style: none;
+  gap: 2.2rem;
+  padding: 0;
+  margin: 0;
+}
+
+.portfolio-navbar_links .navbar-link {
+  position: relative;
+  text-decoration: none;
+  color: var(--nav-link-color);
+  font-size: 1.075rem;
+  padding-bottom: 5px;
+  letter-spacing: 0.1px;
+  transition: color 0.4s ease;
+  font-weight: 500;
+}
+
+.portfolio-navbar_links .navbar-link::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 2px;
+  background: #ff9800;
+  transition: width 0.4s ease-in-out;
+}
+
+.portfolio-navbar_links .navbar-link:hover,
+.portfolio-navbar_links .navbar-link.active {
+  color: var(--nav-link-hover-color);
+}
+
+.portfolio-navbar_links .navbar-link:hover::after,
+.portfolio-navbar_links .navbar-link.active::after {
+  width: 100%;
+}
+
+/* Hero Szekció */
+.main-content .section:not(:first-child) {
+  margin: 1.875rem 0;
+}
+
+.section-hero-wrapper {
+  background: url('https://static.vecteezy.com/system/resources/previews/068/687/378/non_2x/soft-abstract-blue-background-minimalist-and-clean-background-suitable-for-ads-promotion-background-banner-and-background-presentation-free-vector.jpg');
+  height: calc(100vh - 70px);
+}
+
+.hero-section {
+  min-height: calc(100vh - 70px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  padding: 0 10%;
+}
+
+.hero-section .hero-header-title {
+  font-size: 3.5rem;
+  margin-bottom: 1rem;
+  color: #222;
+  font-weight: 600;
+}
+
+.hero-header-title span {
+  background: linear-gradient(90deg, #ff9800, #ffb347);
+  background-clip: text;
+  color: transparent;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.05);
+}
+
+.hero-section .hero-header-subtitle {
+  font-size: 1.075rem;
+  color: #555;
+  font-weight: 500;
+}
+
+.hero-section .hero-header-buttons {
+  display: flex;
+  justify-content: center;
+  margin: 5px 0;
+  gap: 1.4rem;
+}
