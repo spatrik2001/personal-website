@@ -1,16 +1,16 @@
 <template>
   <NavbarComponent />
-  <main class="main-content">
-    <RouterView />
-  </main>
+  <RouterView />
+  <FooterComponent />
 </template>
 
 <script>
 import NavbarComponent from './components/layout/NavbarComponent.vue'
+import FooterComponent from './components/layout/FooterComponent.vue'
 
 export default {
   components: {
-    NavbarComponent,
+    NavbarComponent, FooterComponent
   },
 }
 </script>

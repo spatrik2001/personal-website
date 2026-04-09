@@ -1,5 +1,5 @@
 <template>
-  <div id="hero" class="section hero-section container">
+  <div id="home" class="section hero-section container">
     <div class="section-body">
       <h1 class="hero-header-title">Hi, I'm <span>Scheuer Patrik</span></h1>
       <p class="hero-header-subtitle">
@@ -8,8 +8,8 @@
         laborum culpa?
       </p>
       <div class="hero-header-buttons">
-        <a href="" class="btn btn-primary">Lorem</a>
-        <a href="" class="btn btn-secondary">Ipsum</a>
+        <a href="#about" class="header-buttons__button">Egy</a>
+        <a href="https://github.com/spatrik2001" target="_blank" class="header-buttons__button">Github</a>
       </div>
     </div>
   </div>

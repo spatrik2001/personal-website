@@ -91,50 +91,18 @@ body {
   width: 100%;
 }
 
-/* Hero Szekció */
-.main-content .section:not(:first-child) {
-  margin: 1.875rem 0;
-}
-
-.section-hero-wrapper {
-  background: url('https://static.vecteezy.com/system/resources/previews/068/687/378/non_2x/soft-abstract-blue-background-minimalist-and-clean-background-suitable-for-ads-promotion-background-banner-and-background-presentation-free-vector.jpg');
-  height: calc(100vh - 70px);
-}
-
-.hero-section {
-  min-height: calc(100vh - 70px);
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.portfolio-footer {
+  width: 100%;
   text-align: center;
-  position: relative;
-  overflow: hidden;
-  padding: 0 10%;
-}
-
-.hero-section .hero-header-title {
-  font-size: 3.5rem;
-  margin-bottom: 1rem;
-  color: #222;
-  font-weight: 600;
-}
-
-.hero-header-title span {
-  background: linear-gradient(90deg, #ff9800, #ffb347);
-  background-clip: text;
-  color: transparent;
-  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.05);
-}
-
-.hero-section .hero-header-subtitle {
-  font-size: 1.075rem;
-  color: #555;
+  color: #fff;
+  margin-top: auto;
+  padding: 1rem 0;
+  background: #222;
   font-weight: 500;
+  font-size: 1.05rem;
+  letter-spacing: 0.2px;
 }
 
-.hero-section .hero-header-buttons {
-  display: flex;
-  justify-content: center;
-  margin: 5px 0;
-  gap: 1.4rem;
+.portfolio-footer p {
+  margin: 0;
 }

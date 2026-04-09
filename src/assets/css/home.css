@@ -1,0 +1,108 @@
+.main-content section:not(.section-hero-wrapper) .section {
+  margin: 1.875rem 0;
+}
+
+.main-content .section-head {
+    margin-bottom: 0;
+    padding: 1.5rem 0;
+}
+
+.main-content .section-head-title {
+    text-align: center;
+    font-size: 1.675rem;
+    line-height: 1.5;
+    font-weight: 600;
+    letter-spacing: 0.4px;
+}
+
+/* Hero section */
+.section-hero-wrapper {
+  background: url('../img/background3.svg');
+  height: calc(100vh - 70px);
+  background-repeat: no-repeat;
+  background-position: 50%;
+  background-size: cover;
+}
+
+.hero-section {
+  min-height: calc(100vh - 70px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  padding: 0 10%;
+}
+
+.hero-section .hero-header-title {
+  font-size: 3.5rem;
+  margin-bottom: 1rem;
+  color: #222;
+  font-weight: 600;
+}
+
+.hero-header-title span {
+  background: linear-gradient(90deg, #ff9800, #ffb347);
+  background-clip: text;
+  color: transparent;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.05);
+}
+
+.hero-section .hero-header-subtitle {
+  font-size: 1.075rem;
+  color: #555;
+  font-weight: 500;
+}
+
+.hero-section .hero-header-buttons {
+  display: flex;
+  justify-content: center;
+  margin: 5px 0;
+  gap: 1.4rem;
+}
+
+.hero-header-buttons .header-buttons__button {
+  background: #ffb347;
+  text-decoration: none;
+  padding: 8px 20px;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  color: #222;
+  font-weight: 500;
+  transition: background 0.4s;
+}
+
+.hero-header-buttons .header-buttons__button:hover {
+    background: #ff9800;
+    color: #fff;
+}
+
+/* About section */
+.about-container {
+    display: flex;
+    gap: 20px;
+}
+
+.about-container-column {
+  max-width: 500px;
+}
+
+.about-container-column:first-child {
+  background: #300a24;
+  color: #fff;
+  border-radius: 16px;
+  padding: 0 5px;
+  min-width: 240px;
+}
+
+.about-container-column:first-child .module-title {
+    display: flex;
+    justify-content: space-between;
+}
+
+.about-container-column:last-child {
+    background: #f8f9fa;
+    border-radius: 10px;
+    padding: 1rem 2rem;
+}
