@@ -21,13 +21,14 @@ html {
 body {
     font-family: 'Inter', sans-serif;
     color: var(--text-color);
+    background: rgba(242, 242, 242, 0.15);
     line-height: 1.6;
     padding: 0;
     margin: 0;
 }
 
 .card {
-    background: #f3f5f7;
+    background: #f7f7f7;
     color: #222;
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
@@ -54,7 +55,7 @@ body {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
 }
 
-.portfolio-navbar_logo {
+.portfolio-navbar__logo {
     text-transform: uppercase;
     font-weight: bolder;
     font-size: 1.45rem;
@@ -65,7 +66,38 @@ body {
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.04);
 }
 
-.portfolio-navbar_links {
+.portfolio-navbar__toggle {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0.5rem;
+}
+
+.portfolio-navbar__toggle span {
+    display: block;
+    width: 28px;
+    height: 3px;
+    background: #222;
+    border-radius: 2px;
+    transition: 0.3s;
+}
+
+.portfolio-navbar__toggle span.open:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+}
+
+.portfolio-navbar__toggle span.open:nth-child(2) {
+    opacity: 0;
+}
+
+.portfolio-navbar__toggle span.open:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+}
+
+.portfolio-navbar__links {
     display: flex;
     list-style: none;
     gap: 2.2rem;
@@ -73,7 +105,7 @@ body {
     margin: 0;
 }
 
-.portfolio-navbar_links .navbar-link {
+.portfolio-navbar__links .navbar-link {
     position: relative;
     text-decoration: none;
     color: var(--nav-link-color);
@@ -84,7 +116,7 @@ body {
     font-weight: 500;
 }
 
-.portfolio-navbar_links .navbar-link::after {
+.portfolio-navbar__links .navbar-link::after {
     content: '';
     position: absolute;
     left: 0;
@@ -95,13 +127,13 @@ body {
     transition: width 0.4s ease-in-out;
 }
 
-.portfolio-navbar_links .navbar-link:hover,
-.portfolio-navbar_links .navbar-link.active {
+.portfolio-navbar__links .navbar-link:hover,
+.portfolio-navbar__links .navbar-link.active {
     color: var(--nav-link-hover-color);
 }
 
-.portfolio-navbar_links .navbar-link:hover::after,
-.portfolio-navbar_links .navbar-link.active::after {
+.portfolio-navbar__links .navbar-link:hover::after,
+.portfolio-navbar__links .navbar-link.active::after {
     width: 100%;
 }
 
@@ -128,4 +160,38 @@ body {
 
 .main-content .section {
     margin: 1.875rem 0;
+}
+
+@media (max-width: 991px) {
+    .portfolio-navbar {
+        position: sticky;
+    }
+
+    .portfolio-navbar__toggle {
+        display: flex;
+    }
+
+    .portfolio-navbar__links {
+        position: absolute;
+        top: 70px;
+        left: 0;
+        right: 0;
+        text-align: center;
+        background: #f8f9fa;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 2rem;
+        padding: 1rem;
+        display: none;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    }
+
+    .portfolio-navbar__links.open {
+        display: flex;
+    }
+
+    .portfolio-navbar__links.open li {
+        justify-content: center;
+        margin: 0 auto;
+    }
 }

@@ -1,6 +1,6 @@
 {
   "name": "personal-website",
-  "version": "0.1.0",
+  "version": "0.4.2",
   "private": true,
   "description": "Personal Website for portfolio",
   "homepage": "https://github.com/spatrik2001/personal-website#readme",
@@ -16,7 +16,7 @@
   "type": "module",
   "main": "eslint.config.js",
   "scripts": {
-    "dev": "vite",
+    "dev": "vite --host",
     "build": "vite build",
     "preview": "vite preview",
     "lint": "run-s lint:*",

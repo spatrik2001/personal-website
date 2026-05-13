@@ -6,7 +6,7 @@
     </div>
     <div class="section-body">
       <div class="about-container">
-        <div class="about-container-column">
+        <div class="about-container-column max-w-95 md:max-w-[500px]">
           <div class="module-head">
             <h3 class="module-head-title">Developer.js</h3>
             <div class="module-head-buttons">
@@ -59,7 +59,7 @@
             </code>
           </div>
         </div>
-        <div class="about-container-column">
+        <div class="about-container-column max-w-95 md:max-w-[500px]">
           <div class="module-head mb-2">
             <img
               src="https://szelearning.sze.hu/pluginfile.php/429195/user/icon/boost/f1?rev=18701322"

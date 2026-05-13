@@ -10,6 +10,19 @@ const router = createRouter({
       component: PageView,
     },
   ],
+  scrollBehavior(to, from, savedPosition) {
+    if (to.hash) {
+      return {
+        el: to.hash,
+        top: 70,
+        behavior: 'smooth', 
+      }
+    } else if (savedPosition) {
+      return savedPosition;
+    } else {
+      return { top: 0 }
+    }
+  }
 })
 
 export default router
