@@ -1,5 +1,5 @@
 <template>
     <footer class="portfolio-footer">
-        <p>Copyright &copy; {{ new Date().getFullYear() }} Scheuer Patrik</p>
+        <p>Copyright &copy; {{ new Date().getFullYear() }} Patrik Scheuer</p>
     </footer>
 </template>

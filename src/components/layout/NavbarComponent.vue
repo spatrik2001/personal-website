@@ -1,6 +1,6 @@
 <template>
     <nav class="portfolio-navbar">
-        <span class="portfolio-navbar__logo">Scheuer Patrik</span>
+        <span class="portfolio-navbar__logo">Patrik Scheuer</span>
         <button class="portfolio-navbar__toggle" aria-label="navbarToggler" @click="toggleMenu">
             <span :class="{ open: menuOpen }"></span>
             <span :class="{ open: menuOpen }"></span>

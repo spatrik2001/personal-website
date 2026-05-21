@@ -35,7 +35,7 @@
               </div>
               <div class="flex gap-4">
                 <p class="text-gray-400">3</p>
-                <p class="ml-6">name: "Scheuer Patrik",</p>
+                <p class="ml-6">name: "Patrik Scheuer",</p>
               </div>
               <div class="flex gap-4">
                 <p class="text-gray-400">4</p>

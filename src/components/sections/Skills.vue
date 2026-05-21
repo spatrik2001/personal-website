@@ -37,11 +37,11 @@ export default {
                 },
                 {
                     name: 'Database',
-                    items: ['MongoDB', 'SQLite', 'Firestore']
+                    items: ['MongoDB', 'MSSQL', 'SQLite', 'Firestore']
                 },
                 {
                     name: 'Tools',
-                    items: ['Docker', 'Git']
+                    items: ['Docker', 'Git', 'Visual Studio Code', 'Postman']
                 }
             ]
         }
