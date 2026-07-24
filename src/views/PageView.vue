@@ -12,6 +12,9 @@
         <section id="section_projects_wrapper" class="section-projects-wrapper">
             <Projects/>
         </section>
+        <section id="section_contact_wrapper" class="section-contact-wrapper">
+            <Contact/>
+        </section>
     </main>
 </template>
 
@@ -20,8 +23,9 @@ import Hero from '@/components/sections/Hero.vue'
 import About from '@/components/sections/About.vue'
 import Skills from '@/components/sections/Skills.vue';
 import Projects from '@/components/sections/Projects.vue';
+import Contact from '@/components/sections/Contact.vue';
 
 export default {
-    components: { Hero, About, Skills, Projects },
+    components: { Hero, About, Skills, Projects, Contact },
 }
 </script>

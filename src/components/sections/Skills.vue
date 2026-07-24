@@ -8,7 +8,7 @@
             <div class="skill-container">
                 <div v-for="skill in skills" :key="skill.name" class="skill-container-column mx-10">
                     <div class="module-head">
-
+                        <img class="skill-container-column__icon" :src="skill.icon" :alt="skill.name" loading="lazy">
                     </div>
                     <div class="module-body">
                         <div class="skill-container-column__info text-center">
@@ -28,18 +28,22 @@ export default {
         return {
             skills: [
                 {
+                    icon: '',
                     name: 'Frontend',
                     items: [ 'Vue.js', 'Angular', 'Javascript', 'Tailwind' ]
                 },
                 {
+                    icon: '',
                     name: 'Backend',
                     items: [ 'Node.js', 'Express', 'Pug', ]
                 },
                 {
+                    icon: '',
                     name: 'Database',
                     items: ['MongoDB', 'MSSQL', 'SQLite', 'Firestore']
                 },
                 {
+                    icon: '',
                     name: 'Tools',
                     items: ['Docker', 'Git', 'Visual Studio Code', 'Postman']
                 }
