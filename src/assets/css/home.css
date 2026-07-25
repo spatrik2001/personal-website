@@ -131,7 +131,7 @@
     text-align: justify;
 }
 
-/* Skills */
+/* Skills section */
 .skill-container {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -139,33 +139,45 @@
     gap: 2rem;
 }
 
-.skill-container-column .module-head {
-    background: lightblue;
-    margin-bottom: 1rem;
+.skill-container-column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
 }
 
-.skill-container-column .module-head-title {
-    font-weight: 600;
-    font-size: 1.45rem;
-    color: #222;
-    letter-spacing: 0.2px;
+.skill-container-column .module-head {
+    margin-bottom: 0.75rem;
+    display: flex;
+    justify-content: center;
+}
+
+.skill-container-column__icon {
+    background: #FCF0E6;
+    padding: 16px;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    box-sizing: border-box;
+    object-fit: contain;
 }
 
 .skill-container-column__title {
-    font-size: 1.05rem;
+    font-size: 1.15rem;
     font-weight: 600;
     color: #222;
     letter-spacing: 0.1px;
+    margin-bottom: 0.25rem;
 }
 
 .skill-container-column__subtitle {
-    font-size: 0.9rem;
+    font-size: 0.925rem;
     font-weight: 400;
     letter-spacing: 0.1px;
-    white-space: pre;
+    line-height: 1.5;
 }
 
-/* Projects */
+/* Projects section */
 .project-show-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -277,6 +289,23 @@
 .contact-container__form input:focus-visible, .contact-container__form textarea:focus-visible {
     outline-color: #FBAE3C;
     outline-width: 1px;
+}
+
+.contact-container__form-button {
+    background: #ffb347;
+    text-decoration: none;
+    padding: 8px 20px;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    color: #222;
+    font-weight: 500;
+    transition: background 0.4s;
+    cursor: pointer;
+}
+
+.contact-container__form-button:hover {
+    background: #ff9800;
+    color: #fff;
 }
 
 @media (max-width: 991px) {

@@ -47,7 +47,7 @@
               </div>
               <div class="flex gap-4">
                 <p class="text-gray-400">6</p>
-                <p>)};</p>
+                <p>});</p>
               </div>
               <div class="flex gap-4">
                 <p class="text-gray-400">7</p>
