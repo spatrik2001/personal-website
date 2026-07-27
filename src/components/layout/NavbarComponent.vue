@@ -8,19 +8,19 @@
         </button>
         <ul :class="['portfolio-navbar__links', { open: menuOpen }]">
             <li>
-                <a href="#home" class="navbar-link" :class="{ active: activeMenu === 'home' }" @click="activeMenu = 'home'">Home</a>
+                <router-link to="#home" class="navbar-link" :class="{ active: activeMenu === 'home' }" @click="activeMenu = 'home'">Home</router-link>
             </li>
             <li>
-                <a href="#about" class="navbar-link" :class="{ active: activeMenu === 'about' }" @click="activeMenu = 'about'">About</a>
+                <router-link to="#about" class="navbar-link" :class="{ active: activeMenu === 'about' }" @click="activeMenu = 'about'">About</router-link>
             </li>
             <li>
-                <a href="#skills" class="navbar-link" :class="{ active: activeMenu === 'skills' }" @click="activeMenu = 'skills'">Skills</a>
+                <router-link to="#skills" class="navbar-link" :class="{ active: activeMenu === 'skills' }" @click="activeMenu = 'skills'">Skills</router-link>
             </li>
             <li>
-                <a href="#projects" class="navbar-link" :class="{ active: activeMenu === 'projects' }" @click="activeMenu = 'projects'">Projects</a>
+                <router-link to="#projects" class="navbar-link" :class="{ active: activeMenu === 'projects' }" @click="activeMenu = 'projects'">Projects</router-link>
             </li>
             <li>
-                <a href="#contact" class="navbar-link" :class="{ active: activeMenu === 'contact' }" @click="activeMenu = 'contact'">Contact</a>
+                <router-link to="#contact" class="navbar-link" :class="{ active: activeMenu === 'contact' }" @click="activeMenu = 'contact'">Contact</router-link>
             </li>
         </ul>
     </nav>

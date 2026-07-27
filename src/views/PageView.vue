@@ -2,7 +2,7 @@
     <section id="section_hero_wrapper" class="section-hero-wrapper">
         <Hero/>
     </section>
-    <main class="main-content container">
+    <main class="main-content container px-8 md:px-10">
         <section id="section_about_wrapper" class="section-about-wrapper">
             <About/>
         </section>

@@ -269,6 +269,7 @@
     padding: 1.5rem 1rem;
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+    width: 100%;
 }
 
 .contact-container__form {
@@ -284,11 +285,13 @@
     border-radius: 8px;
     border: 0.5px solid #d3d3d3;
     resize: none;
+    transition: background 0.1s ease-in-out;
 }
 
 .contact-container__form input:focus-visible, .contact-container__form textarea:focus-visible {
     outline-color: #FBAE3C;
     outline-width: 1px;
+    background: #fbfbfb;
 }
 
 .contact-container__form-button {
@@ -319,12 +322,6 @@
     }
 
     .skill-container, .project-show-container, .contact-container {
-        grid-template-columns: repeat(2, 1fr);
-    }
-}
-
-@media (max-width: 767px) {
-    .skill-container, .project-show-container, .contact-container {
         grid-template-columns: repeat(1, 1fr);
     }
 
@@ -332,12 +329,7 @@
         justify-items: center;
     }
 
-    .project-show-column, .contact-container-column {
-        width: 380px;
-        max-width: 450px;
-    }
-
-    .contact-container-column .module-head-title{
-        text-align: center;
+    .project-show-column {
+        min-width: stretch;
     }
 }

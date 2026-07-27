@@ -32,13 +32,13 @@
                             <input type="checkbox" name="botcheck" class="hidden" style="display: none;" v-model="form.botcheck">
 
                             <label for="name">Your Name</label>
-                            <input type="text" v-model="form.name" id="name" placeholder="Your Name..." required>
+                            <input type="text" v-model="form.name" id="name" placeholder="Your Name..." autocomplete="name" required>
 
                             <label for="email">Your Email</label>
-                            <input type="email" v-model="form.email" id="email" placeholder="xyz@gmail.com" required>
+                            <input type="email" v-model="form.email" id="email" placeholder="xyz@gmail.com" autocomplete="email" required>
 
                             <label for="message">Your Message</label>
-                            <textarea v-model="form.message" id="message" class="min-h-[120px]" placeholder="Dear Sir/Madam, Good day!..." required></textarea>
+                            <textarea v-model="form.message" id="message" class="min-h-[120px]" placeholder="Dear Sir/Madam, Good day!..." autocomplete="message" required></textarea>
 
                             <button type="submit" class="contact-container__form-button" :disabled="isSubmitting">
                                 {{ isSubmitting ? 'Sending...' : 'Send' }}
