@@ -188,6 +188,15 @@ body {
     gap: 1.25rem;
 }
 
+.portfolio-footer-row__totop {
+    font-size: 0.875rem;
+    cursor: pointer;
+    background: #ffb347;
+    border-radius: 50%;
+    padding: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+}
+
 /* Main content */
 .main-content {
     margin: 0 auto;
@@ -195,6 +204,7 @@ body {
 
 .main-content .section {
     margin: 1.875rem 0;
+    scroll-margin-top: 75px;
 }
 
 .main-content .section-head {

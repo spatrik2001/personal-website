@@ -8,10 +8,10 @@
                 </div>
                 <div class="portfolio-footer-row__sections">
                     <ul>
-                        <li><a href="#about">About</a></li>
-                        <li><a href="#skills">Skills</a></li>
-                        <li><a href="#projects">Projects</a></li>
-                        <li><a href="#contact">Contact</a></li>
+                        <li><a class="transition-colors duration-[0.15s] ease-in-out hover:text-[#FBAE3C]" href="#" @click.prevent="scrollToSection('about')">About</a></li>
+                        <li><a class="transition-colors duration-[0.15s] ease-in-out hover:text-[#FBAE3C]" href="#" @click.prevent="scrollToSection('skills')">Skills</a></li>
+                        <li><a class="transition-colors duration-[0.15s] ease-in-out hover:text-[#FBAE3C]" href="#" @click.prevent="scrollToSection('projects')">Projects</a></li>
+                        <li><a class="transition-colors duration-[0.15s] ease-in-out hover:text-[#FBAE3C]" href="#" @click.prevent="scrollToSection('contact')">Contact</a></li>
                     </ul>
                 </div>
                 <div class="portfolio-footer-row__contacts">
@@ -22,7 +22,7 @@
             <div class="portfolio-footer-row">
                 <p>&copy; {{ new Date().getFullYear() }} Patrik Scheuer</p>
                 <div class="portfolio-footer-row__totop" @click.prevent="toTop()">
-                    <a href="#" aria-label="portfolioScroll">Fel</a>
+                    <a href="#" aria-label="portfolioScroll"><img :src="iconToTop" alt="To top"></a>
                 </div>
             </div>
         </div>
@@ -33,14 +33,16 @@
 import iconEmail from '@/assets/img/icon-email.svg';
 import iconLinkedIn from '@/assets/img/icon-linkedin.svg';
 import iconGitHub from '@/assets/img/icon-github.svg';
+import iconToTop from '@/assets/img/icon-totop.svg';
 export default {
     data() {
         return {
             links: [
-                { id: 'linkedin', icon: iconLinkedIn, title: 'LinkedIn', href: 'https://www.linkedin.com/in/patrik-scheuer-022b1a3b0/' },
+                { id: 'linkedin', icon: iconLinkedIn, title: 'LinkedIn', href: 'https://www.linkedin.com/in/patrik-scheuer/' },
                 { id: 'github', icon: iconGitHub, title: 'GitHub', href: 'https://github.com/spatrik2001' },
                 { id: 'email', icon: iconEmail, title: 'Email', href: 'mailto:scheuer.patrik@gmail.com' },
             ],
+            iconToTop
         }
     },
     methods: {
@@ -49,6 +51,15 @@ export default {
                 top: 0,
                 behavior: 'smooth'
             });
+        },
+        scrollToSection(sectionId) {
+            const link = document.getElementById(sectionId);
+            if (link) {
+                link.scrollIntoView({ 
+                    behavior: 'smooth',
+                    block: 'start'
+                });
+            }
         }
     }
 }

@@ -65,7 +65,7 @@ export default {
         return {
             contacts: [
                 { id: 'email', icon: iconEmail, title: 'Email', text: 'scheuer.patrik@gmail.com', href: 'mailto:scheuer.patrik@gmail.com' },
-                { id: 'linkedin', icon: iconLinkedIn, title: 'LinkedIn', text: 'patrik-scheuer', href: 'https://www.linkedin.com/in/patrik-scheuer-022b1a3b0/' },
+                { id: 'linkedin', icon: iconLinkedIn, title: 'LinkedIn', text: 'patrik-scheuer', href: 'https://www.linkedin.com/in/patrik-scheuer/' },
                 { id: 'github', icon: iconGitHub, title: 'GitHub', text: 'spatrik2001', href: 'https://github.com/spatrik2001' },
                 { id: 'location', icon: iconLocation, title: 'Location', text: 'Győr, Hungary' }
             ],

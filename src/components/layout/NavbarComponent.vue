@@ -8,19 +8,19 @@
         </button>
         <ul :class="['portfolio-navbar__links', { open: menuOpen }]">
             <li>
-                <router-link to="#home" class="navbar-link" :class="{ active: activeMenu === 'home' }" @click="activeMenu = 'home'">Home</router-link>
+                <router-link to="#" class="navbar-link" :class="{ active: activeMenu === 'home' }" @click="activeMenu = 'home'" @click.prevent="scrollToSection('home')">Home</router-link>
             </li>
             <li>
-                <router-link to="#about" class="navbar-link" :class="{ active: activeMenu === 'about' }" @click="activeMenu = 'about'">About</router-link>
+                <router-link to="#" class="navbar-link" :class="{ active: activeMenu === 'about' }" @click="activeMenu = 'about'" @click.prevent="scrollToSection('about')">About</router-link>
             </li>
             <li>
-                <router-link to="#skills" class="navbar-link" :class="{ active: activeMenu === 'skills' }" @click="activeMenu = 'skills'">Skills</router-link>
+                <router-link to="#" class="navbar-link" :class="{ active: activeMenu === 'skills' }" @click="activeMenu = 'skills'" @click.prevent="scrollToSection('skills')">Skills</router-link>
             </li>
             <li>
-                <router-link to="#projects" class="navbar-link" :class="{ active: activeMenu === 'projects' }" @click="activeMenu = 'projects'">Projects</router-link>
+                <router-link to="#" class="navbar-link" :class="{ active: activeMenu === 'projects' }" @click="activeMenu = 'projects'" @click.prevent="scrollToSection('projects')">Projects</router-link>
             </li>
             <li>
-                <router-link to="#contact" class="navbar-link" :class="{ active: activeMenu === 'contact' }" @click="activeMenu = 'contact'">Contact</router-link>
+                <router-link to="#" class="navbar-link" :class="{ active: activeMenu === 'contact' }" @click="activeMenu = 'contact'" @click.prevent="scrollToSection('contact')">Contact</router-link>
             </li>
         </ul>
     </nav>
@@ -41,6 +41,15 @@ export default {
     methods: {
         toggleMenu() {
             this.menuOpen = !this.menuOpen;
+        },
+        scrollToSection(sectionId) {
+            const link = document.getElementById(sectionId);
+            if (link) {
+                link.scrollIntoView({ 
+                    behavior: 'smooth',
+                    block: 'start'
+                });
+            }
         }
     }
 }
