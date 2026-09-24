@@ -84,8 +84,8 @@
 
 .about-container-column:first-child .module-head {
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    gap: 1rem;
     margin-bottom: 5px;
     padding: 4px 0;
 }
@@ -117,18 +117,34 @@
 }
 
 .about-container-column .about-container__thumbnail {
-    margin: 0 auto;
+    margin: 0 auto 6px;
     text-align: center;
     border-radius: 50%;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
 }
 
-.about-container-column:not(:first-child) .module-body {
+.about-container-column .about-container__description {
     font-size: 1rem;
     line-height: 1.6;
     color: #555;
     letter-spacing: 0.1px;
     text-align: justify;
+    margin-bottom: 1rem;
+}
+
+.about-container__button {
+    background: #ffb347;
+    text-decoration: none;
+    padding: 8px 20px;
+    border-radius: 8px;
+    color: #222;
+    font-weight: 500;
+    transition: background 0.4s;
+}
+
+.about-container__button:hover {
+    background: #ff9800;
+    color: #fff;
 }
 
 /* Skills section */
@@ -184,11 +200,17 @@
     gap: 1.5rem;
 }
 
+.project-show-column__thumbnail {
+    margin: 0 auto 1rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
 .project-show-column__title {
-    font-size: 1.2rem;
+    font-size: 1.25rem;
     font-weight: 600;
     color: #222;
-    letter-spacing: 0.1px;
+    letter-spacing: 0.2px;
     margin-bottom: 10px;
 }
 
@@ -204,7 +226,6 @@
     text-decoration: none;
     padding: 8px 20px;
     border-radius: 8px;
-    font-size: 1.1rem;
     color: #222;
     font-weight: 500;
     transition: background 0.4s;

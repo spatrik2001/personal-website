@@ -189,12 +189,20 @@ body {
 }
 
 .portfolio-footer-row__totop {
-    font-size: 0.875rem;
     cursor: pointer;
     background: #ffb347;
     border-radius: 50%;
     padding: 10px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+    transition: background 0.4s;
+}
+
+.portfolio-footer-row__totop:hover {
+    background: #ff9800;
+}
+
+.portfolio-footer-row__totop:hover img {
+    filter: brightness(0) invert(1);
 }
 
 /* Main content */

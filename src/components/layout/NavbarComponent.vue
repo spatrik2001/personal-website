@@ -43,6 +43,14 @@ export default {
             this.menuOpen = !this.menuOpen;
         },
         scrollToSection(sectionId) {
+            if (sectionId == 'home') {
+                window.scrollTo({
+                    behavior: 'smooth',
+                    top: 0
+                });
+                return;
+            }
+
             const link = document.getElementById(sectionId);
             if (link) {
                 link.scrollIntoView({ 
